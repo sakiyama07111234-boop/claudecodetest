@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テストページ</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 16px;
+    }
+    button {
+      font-size: 16px;
+      padding: 10px 24px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 16px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #16a34a;
+    }
+  </style>
+</head>
+<body>
+  <h1>テストページ</h1>
+  <button id="btn" type="button">押してください</button>
+  <p id="result"></p>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', function () {
+      document.getElementById('result').textContent = '成功！';
+    });
+  </script>
+</body>
+</html>
